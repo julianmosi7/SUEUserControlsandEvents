@@ -1,0 +1,14 @@
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\bin\Debug\MyUserControlsLib.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\bin\Debug\MyUserControlsLib.pdb
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\TrackControl.g.cs
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\MyUserControlsLib_MarkupCompile.cache
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\MyUserControlsLib_MarkupCompile.lref
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\TrackControl.baml
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\MyUserControlsLib.g.resources
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\MyUserControlsLib.Properties.Resources.resources
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\MyUserControlsLib.csproj.GenerateResource.cache
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\MyUserControlsLib.dll
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\MyUserControlsLib.pdb
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\Equalizer.g.cs
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\Equalizer.baml
+C:\Users\mosha\Documents\Schule\4.Klasse\POS\Project6\MyUserControlsLib\obj\Debug\MyUserControlsLib.csprojAssemblyReference.cache
