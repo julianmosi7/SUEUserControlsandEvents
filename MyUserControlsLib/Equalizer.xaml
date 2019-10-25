@@ -4,10 +4,27 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MyUserControlsLib"
-             mc:Ignorable="d" Height="271.263" Width="122.463">
+             mc:Ignorable="d" Height="158.8" Width="90.094">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ProgressBar Grid.Column="0" Grid.Row="0"></ProgressBar>
+        <ProgressBar Grid.Column="1" Grid.Row="0"></ProgressBar>
+        <ProgressBar Grid.Column="2" Grid.Row="0"></ProgressBar>
+        <Label Content="0" Grid.Column="0" Grid.Row="1" Foreground="Black" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Content="0" Grid.Column="1" Grid.Row="1" Foreground="Black" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Content="0" Grid.Column="2" Grid.Row="1" Foreground="Black" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+
     </Grid>
-    
+
 </UserControl>

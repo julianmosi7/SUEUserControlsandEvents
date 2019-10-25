@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MyUserControlsLib"
-             mc:Ignorable="d" Height="227.388" Width="669.297">
+             mc:Ignorable="d" Height="115.134" Width="273.373">
     <GroupBox Header="GroupBoxHeader" Name="GroupBoxHeader">
         <Grid>
             <Grid.RowDefinitions>
@@ -18,6 +18,12 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Slider Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
+            <TextBox Grid.Column="2" Grid.Row="0" Margin="16"></TextBox>
+
+            <Label Content="0" Grid.Column="0" Grid.Row="1" Foreground="Black" FontSize="18" HorizontalAlignment="Left"></Label>
+            <Label Content="50" Grid.Column="1" Grid.Row="1" Foreground="Black" FontSize="18" HorizontalAlignment="Right"></Label>
+            <Label Content="0" Grid.Column="2" Grid.Row="1" Foreground="Black" FontSize="18" HorizontalAlignment="Center"></Label>
+
         </Grid>
     </GroupBox>
 
