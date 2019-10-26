@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MyUserControlsLib"
-             mc:Ignorable="d" Height="115.134" Width="273.373">
+             mc:Ignorable="d" Height="84.634" Width="266.828">
     <GroupBox Header="GroupBoxHeader" Name="GroupBoxHeader">
         <Grid>
             <Grid.RowDefinitions>
@@ -17,12 +17,12 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Slider Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
-            <TextBox Grid.Column="2" Grid.Row="0" Margin="16"></TextBox>
+            <Slider Name="sliVal" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" ValueChanged="SliVal_ValueChanged"/>
+            <TextBox Name="txtVal" Grid.Column="2" Grid.Row="0" Margin="6"></TextBox>
 
-            <Label Content="0" Grid.Column="0" Grid.Row="1" Foreground="Black" FontSize="18" HorizontalAlignment="Left"></Label>
-            <Label Content="50" Grid.Column="1" Grid.Row="1" Foreground="Black" FontSize="18" HorizontalAlignment="Right"></Label>
-            <Label Content="0" Grid.Column="2" Grid.Row="1" Foreground="Black" FontSize="18" HorizontalAlignment="Center"></Label>
+            <Label Name="lblVal1" Content="0" Grid.Column="0" Grid.Row="1" Foreground="Black" FontSize="16" HorizontalAlignment="Left"></Label>
+            <Label Name="lblVal2" Content="50" Grid.Column="1" Grid.Row="1" Foreground="Black" FontSize="16" HorizontalAlignment="Right"></Label>
+            <Label Name="lblVal3" Content="0" Grid.Column="2" Grid.Row="1" Foreground="Black" FontSize="16" HorizontalAlignment="Center"></Label>
 
         </Grid>
     </GroupBox>

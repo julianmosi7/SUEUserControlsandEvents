@@ -6,8 +6,25 @@
         xmlns:local="clr-namespace:SUEUserControlsandEvents"
         xmlns:MyUserControlsLib="clr-namespace:MyUserControlsLib;assembly=MyUserControlsLib" x:Class="SUEUserControlsandEvents.MainWindow"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <MyUserControlsLib:UserControl1 Name="SlideProzent" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0"/>
+        <MyUserControlsLib:UserControl1 Name="SlideUeberschrift" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0"/>
 
     </Grid>
 </Window>

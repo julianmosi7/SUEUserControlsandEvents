@@ -4,11 +4,11 @@
 library
 C#
 .cs
-D:\Schule\4.Klasse\POS\Project7\SUEUserControlsandEvents\MyUserControlsLib\obj\Debug\
+D:\Schule\4.Klasse\POS\Project7\SUEUserControlsandEvents\MyUserControlsLib\obj\Release\
 MyUserControlsLib
 none
 false
-DEBUG;TRACE
+TRACE
 
 222334830
 
@@ -16,5 +16,5 @@ DEBUG;TRACE
 13-1505183044
 Equalizer.xaml;TrackControl.xaml;
 
-False
+True
 

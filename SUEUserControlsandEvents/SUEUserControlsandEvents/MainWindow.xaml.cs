@@ -24,5 +24,18 @@ namespace SUEUserControlsandEvents
         {
             InitializeComponent();
         }
+
+        public void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            SlideProzent.Min = 0;
+            SlideProzent.Max = 100;
+            SlideProzent.TextboxBackground = Brushes.LightBlue;
+            SlideProzent.Title = "Prozent";
+
+            SlideUeberschrift.Min = 0;
+            SlideUeberschrift.Max = 50;
+            SlideUeberschrift.TextboxBackground = Brushes.GreenYellow;
+            SlideUeberschrift.Title = "Ueberschrift";
+        }               
     }
 }
