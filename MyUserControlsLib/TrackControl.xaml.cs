@@ -23,7 +23,9 @@ namespace MyUserControlsLib
     {
         [Category("Data"), Description("Set the current value")]
 
+
         public event EventHandler<ValueChangedEventArgs> ValueChanged;
+
                
         public int Min
         {
@@ -80,6 +82,7 @@ namespace MyUserControlsLib
         {
             lblVal3.Content = $"{sliVal.Value:0.0}";
             txtVal.Text = $"{sliVal.Value:0.0}";
+
 
             if (ValueChanged == null) return;
             ValueChanged(this, new ValueChangedEventArgs
