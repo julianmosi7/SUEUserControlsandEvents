@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SUEUserControlsandEvents.Properties
+namespace MyUserControlsLib.Properties
 {
 
 
