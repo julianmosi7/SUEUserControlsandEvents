@@ -19,11 +19,15 @@ namespace MyUserControlsLib
     /// <summary>
     /// Interaction logic for UserControl1.xaml
     /// </summary>
+    
+    [DefaultEvent(nameof(ValueChanged))]
     public partial class UserControl1 : UserControl
     {
         [Category("Data"), Description("Set the current value")]
 
         public event EventHandler<ValueChangedEventArgs> ValueChanged;
+
+        double currentValue;
         
         public int Min
         {
@@ -81,11 +85,15 @@ namespace MyUserControlsLib
             lblVal3.Content = $"{sliVal.Value:0.0}";
             txtVal.Text = $"{sliVal.Value:0.0}";
 
-            if (ValueChanged == null) return;
-            ValueChanged(this, new ValueChangedEventArgs
+            
+
+            ValueChanged?.Invoke(this, new ValueChangedEventArgs
             {
-                ValEvent = sliVal.Value
+                ValEvent = sliVal.Value,
+                ValEventBefore = currentValue
             });
+
+            currentValue = sliVal.Value;
         }
     }
 }

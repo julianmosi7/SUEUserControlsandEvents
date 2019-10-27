@@ -20,6 +20,7 @@ namespace MyUserControlsLib
     /// </summary>
     public partial class MainWindow : Window
     {
+        string Path = @"D:\Schule\4.Klasse\POS\Project7\SUEUserControlsandEvents\SUEUserControlsandEvents\SUEUserControlsandEvents\Images\";
         public MainWindow()
         {
             InitializeComponent();
@@ -31,11 +32,31 @@ namespace MyUserControlsLib
             SlideProzent.Max = 100;
             SlideProzent.TextboxBackground = Brushes.LightBlue;
             SlideProzent.Title = "Prozent";
+            SlideProzent.ValueChanged += ValueChangedEvent;
 
             SlideUeberschrift.Min = 0;
             SlideUeberschrift.Max = 50;
             SlideUeberschrift.TextboxBackground = Brushes.GreenYellow;
             SlideUeberschrift.Title = "Ueberschrift";
-        }               
+            SlideProzent.ValueChanged += ValueChangedEvent;
+
+        }
+
+        private void ValueChangedEvent(object sender, ValueChangedEventArgs e)
+        {
+            Console.WriteLine($"Value changed to {e.ValEvent:0.0}");
+            Console.WriteLine($"Value before was {e.ValEventBefore:0.0}");            
+
+            if (e.ValEventBefore.CompareTo(e.ValEvent) > 0)
+            {
+                Console.WriteLine($"Value decreased");
+                Arrow.Source = new BitmapImage(new Uri($"{Path}arrow_down.png"));
+            }
+            else if(e.ValEventBefore.CompareTo(e.ValEvent) < 0)
+            {
+                Console.WriteLine($"Value increased");
+                Arrow.Source = new BitmapImage(new Uri($"{Path}arrow_up.png"));
+            }
+        }
     }
 }

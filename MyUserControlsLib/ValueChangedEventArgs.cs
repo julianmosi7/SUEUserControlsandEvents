@@ -10,7 +10,7 @@ namespace MyUserControlsLib
     public class ValueChangedEventArgs : EventArgs
     {
         public double ValEvent { get; set; }
-        
 
+        public double ValEventBefore { get; set; }
     }
 }
