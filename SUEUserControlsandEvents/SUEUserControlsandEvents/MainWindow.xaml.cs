@@ -20,7 +20,7 @@ namespace MyUserControlsLib
     /// </summary>
     public partial class MainWindow : Window
     {
-        string Path = @"D:\Schule\4.Klasse\POS\Project7\SUEUserControlsandEvents\SUEUserControlsandEvents\SUEUserControlsandEvents\Images\";
+        string Path = @"Images\";
         public MainWindow()
         {
             InitializeComponent();
@@ -50,12 +50,12 @@ namespace MyUserControlsLib
             if (e.ValEventBefore.CompareTo(e.ValEvent) > 0)
             {
                 Console.WriteLine($"Value decreased");
-                Arrow.Source = new BitmapImage(new Uri($"{Path}arrow_down.png"));
+                Arrow.Source = new BitmapImage(new Uri($"{Path}arrow_down.png", UriKind.Relative));
             }
             else if(e.ValEventBefore.CompareTo(e.ValEvent) < 0)
             {
                 Console.WriteLine($"Value increased");
-                Arrow.Source = new BitmapImage(new Uri($"{Path}arrow_up.png"));
+                Arrow.Source = new BitmapImage(new Uri($"{Path}arrow_up.png",UriKind.Relative));
             }
         }
     }
