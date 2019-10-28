@@ -40,6 +40,11 @@ namespace MyUserControlsLib
             SlideUeberschrift.Title = "Ueberschrift";
             SlideProzent.ValueChanged += ValueChangedEvent;
 
+            SlideThousand.Min = 0;
+            SlideThousand.Max = 1000;
+            SlideThousand.Title = "0-1000";
+            SlideProzent.ValueChanged += ValueChangedEvent;
+
         }
 
         private void ValueChangedEvent(object sender, ValueChangedEventArgs e)
@@ -57,6 +62,8 @@ namespace MyUserControlsLib
                 Console.WriteLine($"Value increased");
                 Arrow.Source = new BitmapImage(new Uri($"{Path}arrow_up.png",UriKind.Relative));
             }
+
+            txtArrow.Text = $"{e.ValEvent:0}";
         }
     }
 }

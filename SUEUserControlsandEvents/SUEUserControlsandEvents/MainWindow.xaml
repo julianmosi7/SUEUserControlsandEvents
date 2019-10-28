@@ -33,7 +33,7 @@
         <MyUserControlsLib:UserControl1 Name="SlideThousand" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,3.5,0,45.5" Height="85" Grid.RowSpan="2" Width="775" ValueChanged="ValueChangedEvent"></MyUserControlsLib:UserControl1>
         <ProgressBar Name="Progressbar" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" Margin="8"></ProgressBar>
         <Image Name="Arrow" Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="2" Margin="40,6,100,6"></Image>
-        <TextBox Name="Text" Grid.Column="4" Grid.Row="4" Margin="130,6,20,6"></TextBox>
+        <TextBox Name="txtArrow" Grid.Column="4" Grid.Row="4" Margin="130,6,20,6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
 
     </Grid>
 </Window>
