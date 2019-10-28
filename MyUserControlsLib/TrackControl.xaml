@@ -18,7 +18,7 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Slider Name="sliVal" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" ValueChanged="SliVal_ValueChanged"/>
-            <TextBox Name="txtVal" Grid.Column="2" Grid.Row="0" Margin="6"></TextBox>
+            <TextBox Name="txtVal" Grid.Column="2" Grid.Row="0" Margin="6" TextChanged="TxtVal_TextChanged"></TextBox>
 
             <Label Name="lblVal1" Content="0" Grid.Column="0" Grid.Row="1" Foreground="Black" FontSize="16" HorizontalAlignment="Left"></Label>
 

@@ -18,10 +18,10 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <ProgressBar Name="progVal1" Grid.Column="0" Grid.Row="0" Minimum="0" Maximum="10" MouseDown="ProgMouseClick"></ProgressBar>
-        <ProgressBar Name="progVal2" Grid.Column="1" Grid.Row="0" Minimum="0" Maximum="10" MouseDown="ProgMouseClick"></ProgressBar>
-        <ProgressBar Name="progVal3" Grid.Column="2" Grid.Row="0" Minimum="0" Maximum="10" MouseDown="ProgMouseClick"></ProgressBar>
-
+        <ProgressBar Name="progVal1" Grid.Column="0" Grid.Row="0" Minimum="0" Maximum="10" MouseDown="ProgMouseClick" Orientation="Vertical"></ProgressBar>
+        <ProgressBar Name="progVal2" Grid.Column="1" Grid.Row="0" Minimum="0" Maximum="10" MouseDown="ProgMouseClick" Orientation="Vertical"></ProgressBar>
+        <ProgressBar Name="progVal3" Grid.Column="2" Grid.Row="0" Minimum="0" Maximum="10" MouseDown="ProgMouseClick" Orientation="Vertical"></ProgressBar>       
+               
 
         <Label Name="lblVal1" Content="0" Grid.Column="0" Grid.Row="1" Foreground="Black" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
         <Label Name="lblVal2" Content="0" Grid.Column="1" Grid.Row="1" Foreground="Black" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>

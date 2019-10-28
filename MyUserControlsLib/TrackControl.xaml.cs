@@ -95,5 +95,16 @@ namespace MyUserControlsLib
 
             currentValue = sliVal.Value;
         }
+
+        private void TxtVal_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                sliVal.Value = Double.Parse(txtVal.Text);
+            }catch(FormatException ex)
+            {
+                
+            }            
+        }
     }
 }
